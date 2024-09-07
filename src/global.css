@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI Variable", "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* ------------ Header ------------ */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000023;
+  color: white;
+  padding: 20px 0;
+}
+
+.img-white {
+  filter: brightness(0) invert(1);
+}
+
+.header img {
+  max-width: 150px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ------------ Main ------------ */
+.search {
+  display: flex;
+  justify-content: center;
+}
+.search input,
+.search input::placeholder {
+  color: #02b0c8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main div {
+  color: #02b0c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main div h2 {
+  padding-top: 30px;
+}
+
+#submit-btn {
+  margin-top: 20px;
+}
+
+#form input {
+  padding: 3px 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+#resultado {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding: 20px 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #02b0c8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 300px;
+  padding-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: #02b0c8;
+}
+
+.not-found img {
+  width: 250px;
+  padding-bottom: 10px;
+}
+
+/* ------------ Footer ------------ */
+.footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #000023;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* --------------  MEDIA QUERIES ----------------  */
+@media (max-width: 1330px) {
+  #resultado {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 990px) {
+  #resultado {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 675px) {
+  #resultado {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    display: none;
+  }
+  #resultado {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
