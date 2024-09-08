@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import styles from "./style.module.css";
 
-export function DetailsPage() {
+export function DetailsMoviePage({ userList, setUserList }) {
   const navigate = useNavigate();
   const { id } = useParams();
   const [movie, setMovie] = useState([]);
@@ -69,7 +69,7 @@ export function DetailsPage() {
           </p>
           <div className="btns">
             <Link className="btnDetails" to={`/`}>
-              Voltar
+              Voltar para a Home
             </Link>
           </div>
         </div>
