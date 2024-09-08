@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
 import { Search } from "../../components/Search";
 import { Card } from "../../components/Card";
 import { NotFound } from "../../components/NotFound";
@@ -32,7 +30,6 @@ export function Home() {
     </div>
   ) : (
     <div>
-      <Header />
       <div className="main">
         <div id="form">
           <h2>Catálogo de Filmes</h2>
@@ -64,7 +61,6 @@ export function Home() {
           )}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

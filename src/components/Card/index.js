@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Card({ movie }) {
   const baseImgUrl = "https://image.tmdb.org/t/p/w500";
 
@@ -13,9 +15,11 @@ export function Card({ movie }) {
       <p>
         Nota: <strong>{movie.vote_average.toFixed(1)}</strong>
       </p>
-      <div>
-        <button>Detalhes</button>
-        <button>Deletar</button>
+      <div className="btns">
+        <Link className="btnDetails" to={`/details/${movie.id}`}>
+          Detalhes
+        </Link>
+        <button className="btnDelete">Deletar</button>
       </div>
     </div>
   );

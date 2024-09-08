@@ -91,6 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: #02b0c8;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -118,6 +119,41 @@ body {
 .not-found img {
   width: 250px;
   padding-bottom: 10px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.btnDetails {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0254c8;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnDetails:hover {
+  background-color: #026cc8;
+}
+
+.btnDelete {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c80202;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnDelete:hover {
+  background-color: #f85d5d;
 }
 
 /* ------------ Footer ------------ */
